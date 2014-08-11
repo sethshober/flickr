@@ -25,7 +25,7 @@ $(document).ready(function() {
  				$.each(data.items, function(i,photo){
  					//for each photo returned fill div with it
  					photoHTML += "<div class='col-xs-12 col-sm-6 col-md-4 col-lg-3'>";
- 					photoHTML += "<img src=" + photo.media.m + "class='img-thumbnail photo'></div>";
+ 					photoHTML += "<img src=" + photo.media.m + " class='img-thumbnail photo'></div>";
  				}); // end each
  					
  				} else {
