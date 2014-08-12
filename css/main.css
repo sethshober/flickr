@@ -33,6 +33,10 @@ h2 {
 	width: 100%;
 }
 
+.no-match {
+	padding-left: 1em;
+}
+
 .center	{
 	margin: 0 auto;
 }

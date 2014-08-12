@@ -30,7 +30,7 @@ $(document).ready(function() {
  					
  				} else {
  					//if none found tell user
- 					photoHTML = "<p>No photos found matching" + searchString + "</p>";
+ 					photoHTML = "<p class='no-match'>No photos found matching " + searchString + "." + "</p>";
  				}
  				// add to DOM
  				$('#photos').html(photoHTML);
