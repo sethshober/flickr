@@ -1,3 +1,6 @@
+//fast tap
+$('a, label, button, input[type="button"]').fasttap();
+
 $(document).ready(function() {
   
  var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
@@ -26,8 +29,8 @@ $(document).ready(function() {
  				//display them
  				$.each(data.items, function(i,photo){
  					//for each photo returned fill div with it
- 					photoHTML += "<div class='col-xs-12 col-sm-6 col-md-4 col-lg-3'>";
- 					photoHTML += "<img src=" + photo.media.m + " class='img-thumbnail photo'></div>";
+ 					photoHTML += "<div class='col-xs-12 col-sm-6 col-md-4 col-lg-3 test'>";
+ 					photoHTML += "<a href=" + photo.link + " class='photo-link'><img src=" + photo.media.m + " class='img-thumbnail photo' alt='flickr image'></a></div>";
  				}); // end each
  					
  				} else {
@@ -43,4 +46,11 @@ $(document).ready(function() {
 
  }); // end submit
 
+
 }); // end ready
+
+
+
+
+
+
