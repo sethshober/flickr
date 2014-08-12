@@ -9,7 +9,9 @@ $(document).ready(function() {
  	var searchString = $search.val();
 	//prevent submit
  	evt.preventDefault();
-
+ 	$search.prop("disabled",true);
+    $submit.attr("disabled", true).text("Searching...");
+    
  	//AJAXs
  	$.getJSON(
  		flickerAPI,
@@ -34,7 +36,8 @@ $(document).ready(function() {
  				}
  				// add to DOM
  				$('#photos').html(photoHTML);
-
+ 				$search.prop("disabled", false);
+      			$submit.attr("disabled", false).text("Search");
 
  	}); // end getJSON
 
